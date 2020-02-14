@@ -1,0 +1,36 @@
+alert:
+  period: 5000
+spring:
+  profiles:
+    active: dev
+  elasticsearch:
+    rest:
+      uris: http://192.168.1.112:9200
+  datasource:
+    druid:
+      url: jdbc:oracle:thin:@192.168.182.175:1521:kmsystem
+      driver-class-name: oracle.jdbc.OracleDriver
+      username: aradmin
+      password: cft6#UHG#
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      # 获取连接等待超时的时间
+      max-wait: 60000
+#      web-stat-filter:
+#        enabled: true
+#      filter:
+#        stat:
+#          enabled: true
+#          db-type: oracle
+#          log-slow-sql: true
+#        wall:
+#          enabled: true
+#          db-type: oracle
+  task:
+    scheduling:
+      thread-name-prefix: alert-
+server:
+  port: 9000
+  servlet:
+    context-path: /alert
