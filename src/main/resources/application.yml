@@ -30,7 +30,13 @@ spring:
   task:
     scheduling:
       thread-name-prefix: alert-
+#  mvc:
+#    static-path-pattern:
 server:
   port: 9000
   servlet:
     context-path: /alert
+pagehelper:
+  helperDialect: oracle
+  reasonable: true
+  supportMethodsArguments: true
