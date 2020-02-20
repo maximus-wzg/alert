@@ -32,6 +32,9 @@ spring:
       thread-name-prefix: alert-
 #  mvc:
 #    static-path-pattern:
+  mvc:
+    favicon:
+      enabled: false
 server:
   port: 9000
   servlet:

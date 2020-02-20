@@ -73,6 +73,12 @@
             <artifactId>pagehelper-spring-boot-starter</artifactId>
             <version>1.2.12</version>
         </dependency>
+
+        <dependency>
+            <groupId>net.sourceforge.jacob</groupId>
+            <artifactId>jacob</artifactId>
+            <version>1.19</version>
+        </dependency>
     </dependencies>
 
     <build>

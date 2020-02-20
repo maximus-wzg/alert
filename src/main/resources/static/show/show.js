@@ -9,7 +9,6 @@ $(function() {
         pageNumber: 1,
         pageSize: 10,
         pageList: [10, 25, 50, 100], // 可供选择的每页的行数
-        striped: true, // 是否显示行间隔色
         cache: false, // 是否使用缓存，默认为true
         search: true, // 是否搜索
         searchOnEnterKey: true, // 回车搜索
